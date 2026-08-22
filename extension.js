@@ -15,7 +15,7 @@ const MAX_BACKOFF_MS = 30 * 60 * 1000;
 const PROCESS_TIMEOUT_MS = 35 * 1000;
 const MAX_OUTPUT_CHARS = 1024 * 1024;
 const DEFAULT_X = 15;
-const DEFAULT_Y = 415;
+const DEFAULT_Y = 15;
 
 function formatPrice(value) {
     if (value === null || value === undefined || value === '')
