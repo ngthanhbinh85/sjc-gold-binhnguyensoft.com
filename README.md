@@ -69,5 +69,5 @@ Việc lập trình kéo thả widget quá phức tạp nên mình đặt vị t
 
 ```js
 const DEFAULT_X = 15;
-const DEFAULT_Y = 415;
+const DEFAULT_Y = 15;
 ```
