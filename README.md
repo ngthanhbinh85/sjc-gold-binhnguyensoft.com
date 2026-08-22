@@ -5,21 +5,17 @@ Widget hiển thị giá vàng SJC trên Desktop cho GNOME Shell
 
 ![Screenshot](screenshot.png)
 
-## Data
+## Giới thiệu
 
-- SJC buy/sell prices
-- buy/sell spread
-- XAU/USD spot
-- Vietcombank USD/VND sell rate
-- international gold price converted to VND/lượng
-- SJC sell premium over converted international price
+Linux Desktop Widget GNOME Shell cho bạn nào quan tâm giá vàng trong nước và thế giới. Dữ liệu hiển thị bao gồm:
 
-## UI
-
-- refresh every 5 minutes after a successful update
-- manual refresh button
-- draggable desktop position, saved under `~/.config/sjc-gold-widget/position.json`
-- partial market-data failures are shown as a warning while valid SJC data remains visible
+- Giá mua và giá bán SJC (1 lượng)
+- Chênh lệch giá bán - mua
+- Giá thế giới giao ngay XAU/USD 
+- Giá bán USD Vietcombank
+- Giá thế giới giao ngay quy đổi chưa bao gồm thuế phí
+- Chênh lệnh giá bán SJC và giá thế giới quy đổi chưa bao gồm thuế phí
+- Dữ liệu cập nhật 5 phút/lần
 
 ## Yêu cầu
 
@@ -29,6 +25,7 @@ Máy cần có Python và thư viện `curl_cffi`. Kiểm tra thư viện đã �
 
 ```bash
 python3 -c 'import curl_cffi; print(curl_cffi.__version__)'
+```
 
 Nếu báo lỗi ModuleNotFoundError, cài bằng:
 
@@ -52,4 +49,25 @@ Nếu extension không hiển thị, hãy logout rồi login lại, sau đó, b�
 
 ```bash
 gnome-extensions enable sjc-gold@binhnguyensoft.com
+```
+
+## Tùy chỉnh
+
+Mặc định, dữ liệu cập nhật 5 phút một lần, vị trí xuất hiện widget: trên 15px, trái 15px. Nếu muốn thay đổi, sửa file `extension.js` trong thư mục `~/.local/share/gnome-shell/extensions/sjc-gold@binhnguyensoft.com` như sau:
+
+### Tần suất cập nhật 
+
+Thay 5 bằng số khác. KHUYÊN CÁO: đừng nên cập nhật quá thường xuyên để tránh trường hợp server SJC chặn. Giá SJC cũng không thay đổi nhanh nên 5 - 10 phút hãy cập nhật một lần.
+
+```js
+const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
+```
+
+### Vị trí
+
+Việc lập trình kéo thả widget quá phức tạp nên mình đặt vị trí cố định. Sửa hai dòng sau nếu bạn muốn thay đổi:
+
+```js
+const DEFAULT_X = 15;
+const DEFAULT_Y = 415;
 ```
