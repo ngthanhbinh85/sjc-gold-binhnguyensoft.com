@@ -26,10 +26,7 @@ except ImportError:
 
 API_URL = "https://sjc.com.vn/GoldPrice/Services/PriceService.ashx"
 SPOT_URL = "https://xaus.com/api/v1/spot"
-VCB_URL = (
-    "https://portal.vietcombank.com.vn/"
-    "Usercontrols/TVPortal.TyGia/pXML.aspx"
-)
+VCB_URL = "https://portal.vietcombank.com.vn/Usercontrols/TVPortal.TyGia/pXML.aspx"
 
 SESSION = requests.Session()
 
