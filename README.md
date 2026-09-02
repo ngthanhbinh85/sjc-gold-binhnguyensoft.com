@@ -40,10 +40,10 @@ Bạn có thể cài Extension Manager để dễ thao tác bằng giao diện.
 Download repository rồi mở **Terminal** chạy lệnh:
 
 ```bash
-gnome-extensions install --force sjc-gold@inhnguyensoft.com
+gnome-extensions install --force sjc-gold@binhnguyensoft.com
 ```
 
-Hoặc giải nén rồi copy thư mục `sjc-gold@inhnguyensoft.com` vào `~/.local/share/gnome-shell/extensions`.
+Hoặc giải nén rồi copy thư mục `sjc-gold@binhnguyensoft.com` vào `~/.local/share/gnome-shell/extensions`.
 
 Nếu extension không hiển thị, hãy logout rồi login lại, sau đó, bật bằng giao diện hoặc chạy lệnh:
 
