@@ -19,8 +19,6 @@ Linux Desktop Widget GNOME Shell cho bạn nào quan tâm giá vàng trong nư�
 
 ## Yêu cầu
 
-Mình làm cho máy mình đang dùng Ubuntu 26.04 và GNOME 50. Dù metadata mình đang để hỗ trợ từ GNOME 45 trở lên nhưng mình chưa kiểm thử.
-
 Máy cần có Python và thư viện `curl_cffi`. Kiểm tra thư viện đã được cài chưa bằng:
 
 ```bash
