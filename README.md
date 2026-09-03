@@ -37,7 +37,7 @@ pip install curl_cffi
 
 Bạn có thể cài Extension Manager để dễ thao tác bằng giao diện.
 
-Download repository rồi mở **Terminal** chạy lệnh:
+Download repository, giải nén, đổi tên thư mục thành `sjc-gold@binhnguyensoft.com` rồi mở **Terminal** chạy lệnh:
 
 ```bash
 gnome-extensions install --force sjc-gold@binhnguyensoft.com
