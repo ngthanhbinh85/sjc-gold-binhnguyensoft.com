@@ -1,0 +1,8 @@
+{
+  "name": "SJC Gold Widget",
+  "description": "Widget hiển thị giá vàng SJC trên Desktop cho GNOME Shell",
+  "settings-schema": "org.gnome.shell.extensions.sjc-gold-binhnguyensoft-com",
+  "uuid": "sjc-gold@binhnguyensoft.com",
+  "shell-version": [ "45", "46", "47", "48", "49", "50", "51" ],
+  "url": "https://github.com/ngthanhbinh85/sjc-gold-binhnguyensoft.com/"
+}
