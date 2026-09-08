@@ -1,4 +1,5 @@
-# sjc-gold@binhnguyensoft.com
+# Widget giá vàng SJC cho Linux GNOME
+
 Widget hiển thị giá vàng SJC trên Desktop cho GNOME Shell
 
 ## Screenshot
