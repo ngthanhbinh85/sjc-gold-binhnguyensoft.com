@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.sjc-gold-binhnguyensoft-com" path="/org/gnome/shell/extensions/sjc-gold-binhnguyensoft-com/">
+    <key name="left" type="i">
+      <range min="0" max="10000"/>
+      <default>15</default>
+      <summary>Trái</summary>
+      <description>Khoảng cách từ mép trái, tính bằng pixel.</description>
+    </key>
+    <key name="top" type="i">
+      <range min="0" max="10000"/>
+      <default>15</default>
+      <summary>Phải</summary>
+      <description>Khoảng cách từ mép trên, tính bằng pixel.</description>
+    </key>
+    <key name="duration" type="i">
+      <range min="5" max="300"/>
+      <default>5</default>
+      <summary>Chu kỳ cập nhật</summary>
+      <description>Thời gian giữa những lần cập nhật giá (phút). Không nên ít hơn 5 phút để phòng server chặn, và giá vàng SJC thực tế cũng không thay đổi thường xuyên.</description>
+    </key>
+  </schema>
+</schemalist>
