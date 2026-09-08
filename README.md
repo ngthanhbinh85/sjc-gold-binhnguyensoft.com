@@ -1,6 +1,6 @@
 # Widget giá vàng SJC cho Linux GNOME
 
-Widget hiển thị giá vàng SJC trên Desktop cho GNOME Shell
+Widget hiển thị giá vàng SJC trên Desktop cho GNOME Shell, kèm giá quốc tế quy đổi và chênh lệch.
 
 ## Screenshot
 
