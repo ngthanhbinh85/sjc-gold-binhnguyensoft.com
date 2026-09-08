@@ -23,7 +23,7 @@ export default class SjcGoldPreferences extends ExtensionPreferences {
         // Vị trí
         const positionGroup = new Adw.PreferencesGroup({
             title: 'Vị trí',
-            description: 'Thay đổi vị trí xuất hiện của widget',
+            description: 'Thay đổi vị trí xuất hiện của widget.',
         });
 
         // Trái
@@ -79,7 +79,7 @@ export default class SjcGoldPreferences extends ExtensionPreferences {
         // Chu kỳ cập nhật
         const durationGroup = new Adw.PreferencesGroup({
             title: 'Cập nhật',
-            description: 'Thay đổi chu kỳ cập nhật giá',
+            description: 'Thay đổi chu kỳ cập nhật giá.',
         });
         
         const durationKey = this._settings.settings_schema.get_key('duration');
