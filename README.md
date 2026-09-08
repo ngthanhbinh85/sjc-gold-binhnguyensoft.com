@@ -4,7 +4,7 @@ Widget hiển thị giá vàng SJC trên Desktop cho GNOME Shell, kèm giá qu�
 
 ## Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.webp)
 
 ## Giới thiệu
 
@@ -52,21 +52,8 @@ gnome-extensions enable sjc-gold@binhnguyensoft.com
 
 ## Tùy chỉnh
 
-Mặc định, dữ liệu cập nhật 5 phút một lần, vị trí xuất hiện widget: trên 15px, trái 15px. Nếu muốn thay đổi, sửa file `extension.js` trong thư mục `~/.local/share/gnome-shell/extensions/sjc-gold@binhnguyensoft.com` như sau:
+![Extension](extension.webp)
 
-### Tần suất cập nhật 
+Mặc định, dữ liệu cập nhật 5 phút một lần, vị trí xuất hiện widget: trên 15px, trái 15px. Nếu muốn thay đổi, mở app Extension Manager, sẽ có nút Cài đặt xuất hiện ngay dòng SJC Gold Widget, bấm vào nó để thay đổi. KHUYÊN CÁO: đừng nên cập nhật quá thường xuyên để tránh trường hợp server SJC chặn. Giá SJC cũng không thay đổi nhanh nên 5 - 10 phút hãy cập nhật một lần.
 
-Thay 5 bằng số khác. KHUYÊN CÁO: đừng nên cập nhật quá thường xuyên để tránh trường hợp server SJC chặn. Giá SJC cũng không thay đổi nhanh nên 5 - 10 phút hãy cập nhật một lần.
-
-```js
-const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
-```
-
-### Vị trí
-
-Việc lập trình kéo thả widget quá phức tạp nên mình đặt vị trí cố định. Sửa hai dòng sau nếu bạn muốn thay đổi:
-
-```js
-const DEFAULT_X = 15;
-const DEFAULT_Y = 15;
-```
+![Preferences](preferences.webp)
