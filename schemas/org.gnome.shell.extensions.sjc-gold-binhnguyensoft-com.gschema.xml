@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.sjc-gold-binhnguyensoft-com" path="/org/gnome/shell/extensions/sjc-gold-binhnguyensoft-com/">
+    <key name="left" type="i">
+      <range min="0" max="10000"/>
+      <default>15</default>
+      <summary>Vị trí ngang của widget</summary>
+      <description>Khoảng cách từ mép trái, tính bằng pixel.</description>
+    </key>
+    <key name="top" type="i">
+      <range min="0" max="10000"/>
+      <default>15</default>
+      <summary>Vị trí dọc của widget</summary>
+      <description>Khoảng cách từ mép trên, tính bằng pixel.</description>
+    </key>
+  </schema>
+</schemalist>
