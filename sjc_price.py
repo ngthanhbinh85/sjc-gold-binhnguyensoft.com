@@ -30,7 +30,7 @@ except ImportError:
     sys.exit(1)
 
 
-API_URL = "https://sjc.com.vn/GoldPrice/Services/PriceService.ashx"
+JSC_URL = "https://sjc.com.vn/GoldPrice/Services/PriceService.ashx"
 VCB_URL = "https://portal.vietcombank.com.vn/Usercontrols/TVPortal.TyGia/pXML.aspx"
 SPOT_URL = "https://xaus.com/api/v1/spot"
 
@@ -76,7 +76,7 @@ def select_sjc_1l(items):
     return None
 
 
-def parse_api(body):
+def parse_sjc(body):
     data = json.loads(body.strip().lstrip("\ufeff"))
 
     if not data["success"]:
@@ -92,7 +92,7 @@ def parse_api(body):
 
 def get_sjc_price():
     response = browser_get(
-        API_URL,
+        JSC_URL,
         {
             "Accept": "application/json, text/javascript, */*; q=0.01",
             "Origin": "https://sjc.com.vn",
@@ -100,7 +100,7 @@ def get_sjc_price():
             "X-Requested-With": "XMLHttpRequest",
         },
     )
-    return parse_api(response.text)
+    return parse_sjc(response.text)
     
 
 # Lấy giá bán USD
